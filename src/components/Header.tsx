@@ -26,13 +26,21 @@ const NAV = [
 
 function Logo() {
   return (
-    <Link href="/" className="flex items-center gap-2" aria-label="HEMPAC home">
-      <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-flame">
-        <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.4" className="h-4.5 w-4.5">
-          <path d="M5 4v16M19 4v16M5 12h14" strokeLinecap="round" />
-        </svg>
+    <Link href="/" className="flex items-center gap-2.5" aria-label="HEMPAC Sport home">
+      <Image
+        src="/hempac-logo.png"
+        alt=""
+        width={668}
+        height={572}
+        priority
+        className="h-9 w-auto"
+      />
+      <span className="flex flex-col leading-none">
+        <span className="text-lg font-bold tracking-tight">HEMPAC</span>
+        <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-ember">
+          Sport
+        </span>
       </span>
-      <span className="text-lg font-bold tracking-tight">HEMPAC</span>
     </Link>
   );
 }
@@ -224,6 +232,19 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
+              <Link href="/membership" className="text-lg font-medium" onClick={() => setMenuOpen(false)}>
+                Membership
+              </Link>
+              <Link href="/about" className="text-lg font-medium" onClick={() => setMenuOpen(false)}>
+                About
+              </Link>
+              <Link href="/blog" className="text-lg font-medium" onClick={() => setMenuOpen(false)}>
+                Blog
+              </Link>
+              <Link href="/contact" className="text-lg font-medium" onClick={() => setMenuOpen(false)}>
+                Contact
+              </Link>
+              <div className="my-1 h-px bg-line" />
               <Link href="/wishlist" className="text-lg font-medium" onClick={() => setMenuOpen(false)}>
                 Wishlist
               </Link>

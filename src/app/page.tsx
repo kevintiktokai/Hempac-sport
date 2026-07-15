@@ -117,7 +117,7 @@ export default function HomePage() {
                 },
               ].map((f, i) => (
                 <Reveal key={f.title} delay={i * 120}>
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-amber-glow">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-blaze">
                     {f.icon}
                   </span>
                   <h3 className="mt-4 text-[15px] font-semibold">{f.title}</h3>
@@ -237,7 +237,7 @@ export default function HomePage() {
           sizes="100vw"
           className="object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-orange-900/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-red-950/50" />
         <div className="relative mx-auto flex max-w-7xl flex-col items-center px-4 py-24 text-center sm:px-6 sm:py-36 lg:px-8">
           <Reveal>
             <h2 className="max-w-3xl text-4xl font-semibold tracking-display text-white sm:text-6xl">

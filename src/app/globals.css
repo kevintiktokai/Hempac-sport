@@ -4,20 +4,22 @@
   --font-sans: var(--font-inter), "Helvetica Neue", Helvetica, Arial, sans-serif;
   --color-ink: #0c0c0c;
   --color-ink-soft: #1a1a1a;
-  --color-mist: #f4f4f2;
-  --color-line: #e5e5e2;
-  --color-ember: #ea580c;
+  --color-mist: #f5f4f4;
+  --color-line: #e6e4e4;
+  --color-ember: #dc2626;
+  --color-blaze: #ef4444;
   --color-amber-glow: #f59e0b;
   --tracking-display: -0.04em;
 }
 
 :root {
+  /* Brand accent gradient — deep to bright red, matching the HEMPAC logo */
   --gradient-flame: linear-gradient(
     98deg,
-    #92400e 0%,
-    #ea580c 42%,
-    #f59e0b 72%,
-    #fbbf24 100%
+    #7f1416 0%,
+    #dc2626 45%,
+    #ef4444 74%,
+    #ff5a4d 100%
   );
 }
 
@@ -34,7 +36,7 @@ body {
 }
 
 ::selection {
-  background: #ea580c;
+  background: #dc2626;
   color: #fff;
 }
 

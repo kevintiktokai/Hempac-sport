@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CATEGORIES } from "@/lib/products";
 
@@ -7,7 +8,23 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <p className="text-2xl font-bold tracking-tight">HEMPAC</p>
+            <Link href="/" className="flex items-center gap-3" aria-label="HEMPAC Sport home">
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white">
+                <Image
+                  src="/hempac-logo.png"
+                  alt=""
+                  width={668}
+                  height={572}
+                  className="h-8 w-auto"
+                />
+              </span>
+              <span className="flex flex-col leading-none">
+                <span className="text-2xl font-bold tracking-tight">HEMPAC</span>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-blaze">
+                  Sport
+                </span>
+              </span>
+            </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
               Commercial-grade fitness equipment, built for performance and
               built to last. From strength and cardio to recovery, we equip
@@ -52,10 +69,11 @@ export default function Footer() {
                 Company
               </p>
               <ul className="mt-4 space-y-3 text-sm">
-                <li><Link href="/" className="text-white/70 hover:text-white">About HEMPAC</Link></li>
+                <li><Link href="/about" className="text-white/70 hover:text-white">About HEMPAC</Link></li>
+                <li><Link href="/membership" className="text-white/70 hover:text-white">Membership</Link></li>
+                <li><Link href="/blog" className="text-white/70 hover:text-white">Blog</Link></li>
                 <li><Link href="/quiz" className="text-white/70 hover:text-white">Gear Finder</Link></li>
                 <li><Link href="/shop" className="text-white/70 hover:text-white">All Products</Link></li>
-                <li><Link href="/wishlist" className="text-white/70 hover:text-white">Wishlist</Link></li>
               </ul>
             </div>
             <div>
@@ -63,10 +81,11 @@ export default function Footer() {
                 Support
               </p>
               <ul className="mt-4 space-y-3 text-sm">
+                <li><Link href="/contact" className="text-white/70 hover:text-white">Contact Us</Link></li>
+                <li><Link href="/wishlist" className="text-white/70 hover:text-white">Wishlist</Link></li>
+                <li><Link href="/cart" className="text-white/70 hover:text-white">Cart</Link></li>
                 <li><span className="text-white/70">Shipping &amp; Returns</span></li>
-                <li><span className="text-white/70">Warranty</span></li>
-                <li><span className="text-white/70">Size Guides</span></li>
-                <li><span className="text-white/70">Contact Us</span></li>
+                <li><span className="text-white/70">2-Year Warranty</span></li>
               </ul>
             </div>
           </div>

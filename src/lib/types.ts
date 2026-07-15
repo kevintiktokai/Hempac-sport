@@ -52,4 +52,5 @@ export interface OrderPayload {
     postalCode: string;
     country: string;
   };
+  paymentMethod: "online" | "cod";
 }

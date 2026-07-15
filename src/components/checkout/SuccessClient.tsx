@@ -10,6 +10,8 @@ export default function SuccessClient() {
   const order = params.get("order");
   const total = Number(params.get("total") ?? 0);
   const delivery = params.get("delivery");
+  const payment = params.get("payment");
+  const isCod = payment === "cod";
 
   const deliveryLabel = delivery
     ? new Date(`${delivery}T00:00:00`).toLocaleDateString("en-US", {
@@ -28,8 +30,10 @@ export default function SuccessClient() {
         Order <span className="text-flame">confirmed.</span>
       </h1>
       <p className="mt-4 max-w-md text-[15px] leading-relaxed text-ink/60">
-        Thanks for gearing up with HEMPAC. A confirmation email is on its way —
-        your equipment is being prepped for dispatch.
+        Thanks for gearing up with HEMPAC. A confirmation email is on its way.
+        {isCod
+          ? " Our team will call to confirm your order and arrange delivery — have your cash payment ready for the driver."
+          : " Your equipment is being prepped for dispatch."}
       </p>
 
       <dl className="mt-10 w-full max-w-sm space-y-3 rounded-3xl bg-mist p-8 text-left text-sm">
@@ -39,9 +43,13 @@ export default function SuccessClient() {
             <dd className="font-semibold">{order}</dd>
           </div>
         )}
+        <div className="flex justify-between">
+          <dt className="text-ink/60">Payment</dt>
+          <dd className="font-semibold">{isCod ? "Cash on Delivery" : "Paid Online"}</dd>
+        </div>
         {total > 0 && (
           <div className="flex justify-between">
-            <dt className="text-ink/60">Total paid</dt>
+            <dt className="text-ink/60">{isCod ? "Amount due" : "Total paid"}</dt>
             <dd className="font-semibold">{formatPrice(total)}</dd>
           </div>
         )}

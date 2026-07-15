@@ -17,10 +17,14 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
   }
 
-  const { items, customer } = payload ?? {};
+  const { items, customer, paymentMethod } = payload ?? {};
 
   if (!Array.isArray(items) || items.length === 0) {
     return NextResponse.json({ error: "Your cart is empty" }, { status: 400 });
+  }
+
+  if (paymentMethod !== "online" && paymentMethod !== "cod") {
+    return NextResponse.json({ error: "Invalid payment method" }, { status: 400 });
   }
 
   for (const field of [
@@ -77,6 +81,7 @@ export async function POST(request: Request) {
       subtotal: Math.round(subtotal * 100) / 100,
       shipping,
       total,
+      paymentMethod,
       estimatedDelivery: new Date(Date.now() + 4 * 24 * 60 * 60 * 1000)
         .toISOString()
         .slice(0, 10),
