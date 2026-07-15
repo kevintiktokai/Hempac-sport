@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HEMPAC Sport
 
-## Getting Started
+Premium sports equipment retail storefront — **"Premium sports gear engineered
+for champions."**
 
-First, run the development server:
+A full-stack e-commerce experience built with Next.js (App Router), TypeScript
+and Tailwind CSS. The design language is typography-led: oversized grotesque
+headlines with a signature flame-gradient accent, alternating white and
+near-black sections, pill buttons, and large editorial photography.
+
+## Features
+
+- **Home** — hero with watermark photography, marquee ticker, dark value-props
+  band, featured collection with category tabs and carousel, shop-by-sport
+  grid, Beginner/Professional banners, gear-quiz banner, athlete testimonials,
+  and a closing CTA.
+- **Shop** (`/shop`) — category, level and price filtering, sorting, and
+  free-text search, all URL-driven and shareable.
+- **Product pages** (`/shop/[slug]`) — statically generated for all products,
+  with image gallery, color/size/quantity selection, specs and related items.
+- **Cart** — persistent (localStorage), quantity management, free-shipping
+  progress meter.
+- **Wishlist** — save products from any card, persistent across visits.
+- **Checkout** (`/checkout`) — validated contact/shipping/payment form that
+  posts to `/api/orders` (server-side validation and totals; demo payment) and
+  lands on an order-confirmation page.
+- **Find My Gear quiz** (`/quiz`) — three-step sport/level/budget quiz with
+  scored product recommendations.
+
+## Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # start dev server
+npm run build   # production build
+npm start       # serve production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `src/lib/` — product catalog, types, cart/wishlist store (React context),
+  image helpers.
+- `src/components/` — design-system pieces (pills, icons, carousel, cards) and
+  page-level client components.
+- `src/app/` — App Router pages and the `/api/orders` route handler.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Product and hero imagery is served from Unsplash. Orders are validated and
+acknowledged by the API route but not persisted — swap in a real payment
+provider and database for production use.

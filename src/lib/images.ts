@@ -1,0 +1,50 @@
+const BASE = "https://images.unsplash.com";
+
+/** Build an Unsplash CDN URL at the requested size. */
+export function img(id: string, w = 1200, h?: number, extra = ""): string {
+  const dims = h ? `w=${w}&h=${h}&fit=crop` : `w=${w}`;
+  return `${BASE}/photo-${id}?${dims}&q=80&auto=format${extra}`;
+}
+
+export const PHOTOS = {
+  tennisAction: "1622279457486-62dcc4a431d6",
+  racketSky: "1560012057-4372e14c5085",
+  racketFlatlay: "1595435934249-5df7ed86e1c0",
+  tennisBallLine: "1554068865-24cecd4e34b8",
+  tennisBallDark: "1587280501635-68a0e82cd5ff",
+  tableTennis: "1593786481097-cf281dd12e9e",
+  badminton: "1626224583764-f87db24ac4ea",
+  shoeRed: "1542291026-7eec264c27ff",
+  shoeColor: "1606107557195-0e29a4b5b4aa",
+  shoeWhite: "1595950653106-6c9ebd614d3a",
+  shoeHighTop: "1617606002806-94e279c22567",
+  dumbbell: "1638536532686-d610adfc8e5c",
+  resistanceKit: "1584735935682-2f2b69dff9d2",
+  plates: "1521805103424-d8f8430e8933",
+  barbellGym: "1517836357463-d25dfeac3438",
+  yogaMat: "1592432678016-e910b452f9a2",
+  jumpRope: "1598289431512-b97b0917affc",
+  battleRope: "1599058917212-d750089bc07e",
+  battleRopeDark: "1434596922112-19c563067271",
+  boxGloves: "1549719386-74dfcbf7dbed",
+  boxerBag: "1591117207239-788bf8de6c3b",
+  boxerDark: "1517438322307-e67111335449",
+  basketballCourt: "1519861531473-9200262188bf",
+  hoop: "1546519638-68e109498ffc",
+  soccerGrass: "1575361204480-aadea25e6e68",
+  soccerCleat: "1579952363873-27f3bade9f55",
+  bottle: "1602143407151-7111542de6e8",
+  dumbbellRack: "1576678927484-cc907957088c",
+  yogaPink: "1518611012118-696072aa579a",
+  situps: "1571019613454-1cb2f99b2d8b",
+  pullups: "1526506118085-60ce8714f8c5",
+  crossfitBW: "1574680096145-d05b474e2155",
+  dumbbellCurl: "1583454110551-21f2fa2afe61",
+  runnerRoad: "1571008887538-b36bb32f4571",
+  runnersDusk: "1552674605-db6ffd4facb5",
+  swimmer: "1530549387789-4c1017266635",
+  volleyball: "1547347298-4074fc3086f0",
+  relay: "1461896836934-ffe607ba8211",
+  trx: "1616279969856-759f316a5ac1",
+  pullupWoman: "1541534741688-6078c6bfb5c5",
+} as const;
