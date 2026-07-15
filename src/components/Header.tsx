@@ -18,9 +18,9 @@ import {
 
 const NAV = [
   { href: "/shop", label: "Shop" },
-  { href: "/shop?category=racquet", label: "Racquet" },
-  { href: "/shop?category=footwear", label: "Footwear" },
-  { href: "/shop?category=training", label: "Training" },
+  { href: "/shop?category=strength", label: "Strength" },
+  { href: "/shop?category=cardio", label: "Cardio" },
+  { href: "/shop?category=accessories", label: "Accessories" },
   { href: "/quiz", label: "Find My Gear" },
 ];
 
@@ -161,7 +161,7 @@ export default function Header() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && submitSearch()}
-                placeholder="Search rackets, shoes, gear…"
+                placeholder="Search benches, treadmills, gear…"
                 className="w-full bg-transparent text-[15px] outline-none placeholder:text-ink/40"
                 aria-label="Search products"
               />
@@ -193,7 +193,7 @@ export default function Header() {
             )}
             {query.trim() && results.length === 0 && (
               <p className="px-4 py-6 text-sm text-ink/50">
-                No matches for “{query}”. Try “racket”, “shoes” or “gloves”.
+                No matches for “{query}”. Try “bench”, “treadmill” or “dumbbell”.
               </p>
             )}
           </div>

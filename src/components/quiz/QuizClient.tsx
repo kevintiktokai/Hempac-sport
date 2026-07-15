@@ -15,24 +15,24 @@ interface SportOption {
 }
 
 const SPORTS: SportOption[] = [
-  { id: "racquet", label: "Racquet & Paddle", emoji: "🎾", categories: ["racquet", "footwear"] },
-  { id: "running", label: "Running", emoji: "🏃", categories: ["footwear", "accessories"] },
-  { id: "gym", label: "Gym & Strength", emoji: "🏋️", categories: ["training", "accessories"] },
-  { id: "combat", label: "Combat Sports", emoji: "🥊", categories: ["combat", "training"] },
-  { id: "team", label: "Team Sports", emoji: "🏀", categories: ["team", "footwear"] },
+  { id: "strength", label: "Strength Training", emoji: "🏋️", categories: ["strength", "storage"] },
+  { id: "cardio", label: "Cardio & Conditioning", emoji: "🏃", categories: ["cardio", "accessories"] },
+  { id: "martial", label: "Boxing & Martial Arts", emoji: "🥊", categories: ["martial-arts", "accessories"] },
+  { id: "swimming", label: "Swimming", emoji: "🏊", categories: ["swimming", "accessories"] },
+  { id: "recovery", label: "Recovery & Mobility", emoji: "🧘", categories: ["recovery", "accessories"] },
   { id: "everything", label: "A Bit of Everything", emoji: "⚡", categories: [] },
 ];
 
 const LEVEL_OPTIONS: { id: Level; label: string; copy: string }[] = [
-  { id: "beginner", label: "Beginner", copy: "Learn, improve, and have fun." },
-  { id: "intermediate", label: "Intermediate", copy: "Competing and levelling up." },
-  { id: "pro", label: "Professional", copy: "Power, precision, and performance." },
+  { id: "beginner", label: "Just Starting", copy: "Building a habit — and a home setup." },
+  { id: "intermediate", label: "Levelling Up", copy: "Outgrowing the basics, adding real kit." },
+  { id: "pro", label: "Commercial / Pro", copy: "Studio-grade equipment for daily use." },
 ];
 
 const BUDGETS = [
-  { id: "under-75", label: "Under $75", min: 0, max: 75 },
-  { id: "75-200", label: "$75 – $200", min: 75, max: 200 },
-  { id: "200-plus", label: "$200+", min: 200, max: Infinity },
+  { id: "under-50", label: "Under $50", min: 0, max: 50 },
+  { id: "50-500", label: "$50 – $500", min: 50, max: 500 },
+  { id: "500-plus", label: "$500+", min: 500, max: Infinity },
   { id: "no-limit", label: "Show Me the Best", min: 0, max: Infinity },
 ];
 
@@ -112,7 +112,7 @@ export default function QuizClient() {
       {step === 0 && (
         <section className="mt-10">
           <h1 className="text-4xl font-semibold tracking-display sm:text-6xl">
-            What&apos;s your <span className="text-flame">game?</span>
+            What are you <span className="text-flame">training?</span>
           </h1>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {SPORTS.map((s) => (
@@ -190,7 +190,7 @@ export default function QuizClient() {
             Your perfect <span className="text-flame">match.</span>
           </h1>
           <p className="mt-4 max-w-lg text-[15px] text-ink/60">
-            Hand-picked from our collection based on your game, level and
+            Hand-picked from our collection based on your training, level and
             budget. Every piece is backed by our 2-year warranty.
           </p>
           <div className="mt-12 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 lg:grid-cols-4">

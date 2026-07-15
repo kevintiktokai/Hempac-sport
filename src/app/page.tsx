@@ -23,11 +23,17 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 pt-14 sm:px-6 sm:pt-20 lg:px-8">
         <Reveal>
           <h1 className="max-w-4xl text-[44px] font-semibold leading-[1.02] tracking-display sm:text-6xl lg:text-7xl">
-            Premium sports gear engineered for{" "}
-            <span className="text-flame">champions.</span>
+            Built for performance.{" "}
+            <span className="text-flame">Built to last.</span>
           </h1>
         </Reveal>
-        <Reveal delay={120}>
+        <Reveal delay={80}>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/60">
+            Commercial-grade gym equipment for athletes and studios — from
+            racks and rigs to treadmills, mats and everything in between.
+          </p>
+        </Reveal>
+        <Reveal delay={140}>
           <div className="mt-8 flex flex-wrap items-center gap-4 sm:mt-10">
             <PillLink href="/shop" size="lg">
               Explore Collections
@@ -42,15 +48,15 @@ export default function HomePage() {
       <section className="relative mt-12 sm:mt-16">
         <div className="relative h-[52vw] max-h-[620px] min-h-[320px] w-full overflow-hidden">
           <Image
-            src={img(PHOTOS.tennisAction, 2200, 1200)}
-            alt="Tennis player mid-rally on an outdoor court"
+            src={img(PHOTOS.gymInterior, 2200, 1200)}
+            alt="Commercial gym floor lined with strength equipment"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[50%_20%]"
+            className="object-cover object-[50%_60%]"
           />
           <div className="absolute inset-0 flex items-end justify-center overflow-hidden pb-[4vw]">
-            <p className="watermark text-[13vw]">Play Hard. Win.</p>
+            <p className="watermark text-[12vw]">Train Hard. Win.</p>
           </div>
         </div>
       </section>
@@ -75,8 +81,8 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 sm:py-28 lg:grid-cols-2 lg:items-center lg:px-8">
           <Reveal className="relative aspect-[4/3] overflow-hidden rounded-3xl lg:order-first">
             <Image
-              src={img(PHOTOS.shoeRed, 1400, 1050)}
-              alt="Velocity Elite running shoe"
+              src={img(PHOTOS.plates, 1400, 1050)}
+              alt="Olympic barbell loaded with steel plates"
               fill
               sizes="(max-width: 1024px) 92vw, 45vw"
               className="object-cover"
@@ -96,18 +102,18 @@ export default function HomePage() {
               {[
                 {
                   icon: <BoltIcon className="h-5 w-5" />,
-                  title: "Engineered for Speed",
-                  copy: "Designed for speed, power, and precision.",
+                  title: "Commercial Grade",
+                  copy: "Heavy-duty steel builds rated for daily studio use.",
                 },
                 {
                   icon: <ShieldIcon className="h-5 w-5" />,
-                  title: "Trusted by Athletes",
-                  copy: "Used by professionals and serious competitors worldwide.",
+                  title: "Trusted by Gyms",
+                  copy: "Equipping commercial gyms, studios and serious home setups.",
                 },
                 {
                   icon: <TargetIcon className="h-5 w-5" />,
-                  title: "Gear for Every Sport",
-                  copy: "From racquet sports to fitness, we have you covered.",
+                  title: "Gear for Every Goal",
+                  copy: "From strength and cardio to recovery, we have you covered.",
                 },
               ].map((f, i) => (
                 <Reveal key={f.title} delay={i * 120}>
@@ -126,10 +132,10 @@ export default function HomePage() {
       {/* ————— Featured collection ————— */}
       <FeaturedCollection />
 
-      {/* ————— Shop by sport ————— */}
+      {/* ————— Shop by category ————— */}
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 sm:pb-28 lg:px-8">
         <h2 className="text-4xl font-semibold tracking-display sm:text-5xl">
-          Shop by <span className="text-flame">Sport</span>
+          Shop by <span className="text-flame">Category</span>
         </h2>
         <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
           {CATEGORIES.map((c, i) => (
@@ -161,18 +167,18 @@ export default function HomePage() {
         <div className="grid gap-4 sm:gap-6 lg:grid-cols-2">
           {[
             {
-              title: "Beginner",
-              copy: "Learn, improve, and have fun.",
+              title: "Home Gym",
+              copy: "Compact, affordable gear to train where you live.",
               image: img(PHOTOS.yogaPink, 1400, 900),
               href: "/shop?level=beginner",
-              cta: "Shop Beginner Gear",
+              cta: "Shop Home Gym Gear",
             },
             {
-              title: "Professional",
-              copy: "Power, precision, and performance.",
-              image: img(PHOTOS.boxerDark, 1400, 900),
+              title: "Commercial Grade",
+              copy: "Built for studios, clubs and daily punishment.",
+              image: img(PHOTOS.pullups, 1400, 900),
               href: "/shop?level=pro",
-              cta: "Shop Pro Gear",
+              cta: "Shop Commercial Gear",
             },
           ].map((banner) => (
             <Reveal key={banner.title}>
@@ -201,8 +207,8 @@ export default function HomePage() {
         <Reveal>
           <div className="group relative mt-4 aspect-[16/9] overflow-hidden rounded-3xl bg-ink sm:mt-6 sm:aspect-[21/8]">
             <Image
-              src={img(PHOTOS.volleyball, 2000, 800)}
-              alt="Group of athletes playing volleyball"
+              src={img(PHOTOS.matTrainer, 2000, 800)}
+              alt="Trainer coaching an athlete through a mat workout"
               fill
               sizes="92vw"
               className="object-cover object-[50%_30%] opacity-80 transition-transform duration-700 group-hover:scale-105"
@@ -225,7 +231,7 @@ export default function HomePage() {
       {/* ————— CTA ————— */}
       <section className="relative overflow-hidden bg-ink">
         <Image
-          src={img(PHOTOS.tennisBallDark, 2200, 900)}
+          src={img(PHOTOS.battleRopeDark, 2200, 900)}
           alt=""
           fill
           sizes="100vw"
@@ -240,8 +246,8 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={120}>
             <p className="mx-auto mt-5 max-w-xl text-[15px] leading-relaxed text-white/60">
-              Join thousands of athletes who trust HEMPAC for match-day
-              performance. Gear up once, win all season.
+              Join the gyms, studios and home athletes who trust HEMPAC for
+              equipment that performs. Gear up once, train for years.
             </p>
           </Reveal>
           <Reveal delay={200}>

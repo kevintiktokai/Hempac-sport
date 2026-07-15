@@ -15,9 +15,9 @@ const SORTS = [
 
 const PRICE_BANDS = [
   { id: "0-50", label: "Under $50", min: 0, max: 50 },
-  { id: "50-150", label: "$50 – $150", min: 50, max: 150 },
-  { id: "150-300", label: "$150 – $300", min: 150, max: 300 },
-  { id: "300+", label: "$300+", min: 300, max: Infinity },
+  { id: "50-300", label: "$50 – $300", min: 50, max: 300 },
+  { id: "300-1000", label: "$300 – $1,000", min: 300, max: 1000 },
+  { id: "1000+", label: "$1,000+", min: 1000, max: Infinity },
 ];
 
 export default function ShopClient() {

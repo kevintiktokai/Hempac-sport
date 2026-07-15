@@ -84,10 +84,11 @@ export default function ProductActions({ product }: { product: Product }) {
 
         <button
           onClick={add}
-          className="group flex flex-1 items-center justify-center gap-3 rounded-full bg-ink px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-black sm:flex-none sm:min-w-56"
+          disabled={product.stock === 0}
+          className="group flex flex-1 items-center justify-center gap-3 rounded-full bg-ink px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-black disabled:cursor-not-allowed disabled:opacity-40 sm:flex-none sm:min-w-56"
         >
           <CartIcon className="h-4 w-4" />
-          Add to Cart
+          {product.stock === 0 ? "Out of Stock" : "Add to Cart"}
         </button>
 
         <button
@@ -113,9 +114,11 @@ export default function ProductActions({ product }: { product: Product }) {
       </div>
 
       <p className="text-sm text-ink/50">
-        {product.stock > 20
-          ? "In stock — ships within 24 hours"
-          : `Only ${product.stock} left in stock`}
+        {product.stock === 0
+          ? "Currently out of stock — check back soon"
+          : product.stock > 20
+            ? `In stock${product.estimatedDelivery ? ` — delivery in ${product.estimatedDelivery}` : " — ships within 24 hours"}`
+            : `Only ${product.stock} left in stock${product.estimatedDelivery ? ` — delivery in ${product.estimatedDelivery}` : ""}`}
       </p>
     </div>
   );

@@ -1,10 +1,11 @@
 export type Category =
-  | "racquet"
-  | "footwear"
-  | "training"
-  | "combat"
-  | "team"
-  | "accessories";
+  | "strength"
+  | "cardio"
+  | "accessories"
+  | "recovery"
+  | "swimming"
+  | "storage"
+  | "martial-arts";
 
 export type Level = "beginner" | "intermediate" | "pro";
 
@@ -12,6 +13,7 @@ export interface Product {
   id: string;
   slug: string;
   name: string;
+  sku?: string;
   category: Category;
   price: number;
   compareAtPrice?: number;
@@ -29,6 +31,7 @@ export interface Product {
   sizes?: string[];
   stock: number;
   sports: string[];
+  estimatedDelivery?: string;
 }
 
 export interface CartItem {

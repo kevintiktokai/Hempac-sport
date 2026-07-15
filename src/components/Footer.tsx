@@ -9,9 +9,9 @@ export default function Footer() {
           <div className="lg:col-span-5">
             <p className="text-2xl font-bold tracking-tight">HEMPAC</p>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
-              Premium sports gear engineered for champions. From racquet sports
-              to strength training, we equip athletes at every level of the
-              game.
+              Commercial-grade fitness equipment, built for performance and
+              built to last. From strength and cardio to recovery, we equip
+              gyms, studios and home athletes.
             </p>
             <form className="mt-8 flex max-w-sm items-center rounded-full border border-white/20 p-1.5">
               <input

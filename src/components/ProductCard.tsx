@@ -72,13 +72,19 @@ export default function ProductCard({
         >
           <HeartIcon className="h-4 w-4" filled={wishlisted} />
         </button>
-        <button
-          onClick={quickAdd}
-          className="absolute inset-x-4 bottom-4 flex translate-y-2 items-center justify-center gap-2 rounded-full bg-ink py-3 text-sm font-medium text-white opacity-0 transition-all duration-300 hover:bg-black group-hover:translate-y-0 group-hover:opacity-100"
-        >
-          <CartIcon className="h-4 w-4" />
-          Add to Cart
-        </button>
+        {product.stock === 0 ? (
+          <span className="pointer-events-none absolute inset-x-4 bottom-4 flex items-center justify-center rounded-full bg-white/90 py-3 text-sm font-medium text-ink/60 backdrop-blur">
+            Out of Stock
+          </span>
+        ) : (
+          <button
+            onClick={quickAdd}
+            className="absolute inset-x-4 bottom-4 flex translate-y-2 items-center justify-center gap-2 rounded-full bg-ink py-3 text-sm font-medium text-white opacity-0 transition-all duration-300 hover:bg-black group-hover:translate-y-0 group-hover:opacity-100"
+          >
+            <CartIcon className="h-4 w-4" />
+            Add to Cart
+          </button>
+        )}
       </div>
       <div className="mt-4 flex flex-col gap-1">
         <div className="flex items-center justify-between gap-2">

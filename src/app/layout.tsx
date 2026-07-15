@@ -14,11 +14,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "HEMPAC — Premium Sports Gear Engineered for Champions",
-    template: "%s | HEMPAC",
+    default: "HEMPAC Sport — Premium Fitness Equipment",
+    template: "%s | HEMPAC Sport",
   },
   description:
-    "Premium sports equipment for every level of the game. Racquets, footwear, training gear and more — engineered for speed, power and precision.",
+    "Commercial-grade gym equipment for athletes and studios. Strength, cardio, recovery and accessories — built for performance, built to last.",
 };
 
 export default function RootLayout({

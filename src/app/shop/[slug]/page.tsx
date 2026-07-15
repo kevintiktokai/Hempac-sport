@@ -70,11 +70,14 @@ export default async function ProductPage({
             {product.name}
           </h1>
 
-          <div className="mt-4 flex items-center gap-3">
+          <div className="mt-4 flex flex-wrap items-center gap-3">
             <RatingStars rating={product.rating} />
             <span className="text-sm text-ink/50">
               {product.rating} · {product.reviewCount} reviews
             </span>
+            {product.sku && (
+              <span className="text-sm text-ink/30">SKU {product.sku}</span>
+            )}
           </div>
 
           <div className="mt-5 flex items-baseline gap-3">
