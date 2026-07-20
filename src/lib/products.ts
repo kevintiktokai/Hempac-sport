@@ -491,9 +491,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4,
     "reviewCount": 156,
-    "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/pedometer.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/pedometer.jpg"
     ],
     "shortDescription": "Digital pedometer with accurate step counting and distance tracking.",
     "description": "Digital pedometer with accurate step counting and distance tracking. Features large LCD display and secure clip attachment for comfortable all-day wear.",
@@ -967,10 +967,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.6,
     "reviewCount": 34,
-    "image": "https://images.unsplash.com/photo-1591258370814-01609b341790?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/hyper-extension.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591258370814-01609b341790?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/hyper-extension.jpg"
     ],
     "shortDescription": "Professional hyper extension bench designed for lower back strengthening and core stability exercises.",
     "description": "Professional hyper extension bench designed for lower back strengthening and core stability exercises. Features adjustable pads and heavy-duty construction for safe, effective workouts.",
@@ -3222,10 +3221,9 @@ export const PRODUCTS: Product[] = [
     "rating": 4.5,
     "reviewCount": 89,
     "badge": "New",
-    "image": "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/treadmill-a8.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/treadmill-a8.jpg"
     ],
     "shortDescription": "Home treadmill with motorized incline and multiple workout programs.",
     "description": "Home treadmill with motorized incline and multiple workout programs. Features cushioned running deck, heart rate monitoring, and foldable design for space-saving storage.",
@@ -3359,9 +3357,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4.2,
     "reviewCount": 167,
-    "image": "https://images.unsplash.com/photo-1522844990619-4951c40f7eda?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/bathroom-scale.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1522844990619-4951c40f7eda?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/bathroom-scale.jpg"
     ],
     "shortDescription": "Digital bathroom scale with large LCD display and tempered glass platform.",
     "description": "Digital bathroom scale with large LCD display and tempered glass platform. Features precise weight measurement, auto-calibration, and sleek modern design for any bathroom.",
@@ -5055,6 +5053,345 @@ export const PRODUCTS: Product[] = [
     "stock": 30,
     "sports": [
       "home"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-80",
+    "slug": "digital-jump-rope",
+    "name": "Digital Jump Rope",
+    "sku": "DJR-2024",
+    "category": "accessories",
+    "price": 10,
+    "level": "beginner",
+    "rating": 4.3,
+    "reviewCount": 88,
+    "image": "/products/digital-jumprope.jpg",
+    "gallery": [
+      "/products/digital-jumprope.jpg"
+    ],
+    "shortDescription": "Digital jump rope with an LCD counter and cordless mode.",
+    "description": "Digital jump rope with a built-in LCD counter that tracks jumps, time and calories. Includes a weighted cordless-ball mode for rope-free skipping in tight spaces.",
+    "features": [
+      "LCD counts jumps, time & calories",
+      "Cordless weighted-ball mode",
+      "Adjustable steel cable",
+      "Non-slip foam handles",
+      "Battery included"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "LCD counter"
+      },
+      {
+        "label": "Modes",
+        "value": "Corded & cordless"
+      },
+      {
+        "label": "Cable",
+        "value": "Adjustable"
+      },
+      {
+        "label": "Use",
+        "value": "Cardio & conditioning"
+      }
+    ],
+    "stock": 100,
+    "sports": [
+      "cardio",
+      "conditioning"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-81",
+    "slug": "weight-lifting-belt",
+    "name": "Weight Lifting Belt",
+    "sku": "WLB-2024",
+    "category": "accessories",
+    "price": 30,
+    "level": "intermediate",
+    "rating": 4.6,
+    "reviewCount": 74,
+    "image": "/products/weight-lifting-belt.jpg",
+    "gallery": [
+      "/products/weight-lifting-belt.jpg"
+    ],
+    "shortDescription": "Leather weightlifting belt for lower-back support on heavy lifts.",
+    "description": "A genuine leather weightlifting belt that braces your core and supports the lower back during heavy squats and deadlifts. A sturdy double-prong buckle locks in your preferred tension.",
+    "features": [
+      "Genuine leather construction",
+      "Wide lumbar support panel",
+      "Double-prong steel buckle",
+      "Suede lining for grip",
+      "Multiple sizes available"
+    ],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Leather"
+      },
+      {
+        "label": "Buckle",
+        "value": "Double-prong"
+      },
+      {
+        "label": "Back width",
+        "value": "10 cm"
+      },
+      {
+        "label": "Use",
+        "value": "Powerlifting"
+      }
+    ],
+    "stock": 60,
+    "sports": [
+      "gym",
+      "powerlifting",
+      "strength"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-82",
+    "slug": "medicine-ball-5kg",
+    "name": "Medicine Ball 5kg",
+    "sku": "MDB5-2024",
+    "category": "strength",
+    "price": 58,
+    "level": "intermediate",
+    "rating": 4.5,
+    "reviewCount": 46,
+    "image": "/products/medicine-ball.jpg",
+    "gallery": [
+      "/products/medicine-ball.jpg"
+    ],
+    "shortDescription": "5 kg rubber medicine ball for slams, throws and core work.",
+    "description": "A durable 5 kg rubber medicine ball built for slams, wall throws, twists and functional core training. The textured surface grips well even with sweaty hands.",
+    "features": [
+      "5 kg weighted ball",
+      "Durable rubber shell",
+      "Textured non-slip grip",
+      "Consistent bounce",
+      "Great for functional training"
+    ],
+    "specs": [
+      {
+        "label": "Weight",
+        "value": "5 kg"
+      },
+      {
+        "label": "Material",
+        "value": "Rubber"
+      },
+      {
+        "label": "Surface",
+        "value": "Textured"
+      },
+      {
+        "label": "Use",
+        "value": "Functional & core"
+      }
+    ],
+    "stock": 40,
+    "sports": [
+      "crossfit",
+      "conditioning",
+      "strength"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-83",
+    "slug": "barbell-rack",
+    "name": "Barbell Rack",
+    "sku": "BBR-2024",
+    "category": "storage",
+    "price": 375,
+    "level": "intermediate",
+    "rating": 4.6,
+    "reviewCount": 33,
+    "image": "/products/barbell-rack.jpg",
+    "gallery": [
+      "/products/barbell-rack.jpg"
+    ],
+    "shortDescription": "A-frame barbell / squat stand with adjustable catch heights.",
+    "description": "A sturdy A-frame barbell rack and squat stand with multiple adjustable catch heights. A compact, stable base for squats, presses and rack pulls without a full power cage.",
+    "features": [
+      "Adjustable catch heights",
+      "Heavy-gauge steel A-frame",
+      "Stable wide base",
+      "Rubber-protected uprights",
+      "Compact footprint"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Squat / barbell stand"
+      },
+      {
+        "label": "Frame",
+        "value": "Heavy steel"
+      },
+      {
+        "label": "Adjustable",
+        "value": "Multiple heights"
+      },
+      {
+        "label": "Use",
+        "value": "Squats & presses"
+      }
+    ],
+    "stock": 8,
+    "sports": [
+      "gym",
+      "strength"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-84",
+    "slug": "vibro-massage-belt",
+    "name": "Vibro Massage Belt",
+    "sku": "VMB-2024",
+    "category": "recovery",
+    "price": 30,
+    "level": "intermediate",
+    "rating": 4.1,
+    "reviewCount": 58,
+    "image": "/products/vibro-massage-belt.jpg",
+    "gallery": [
+      "/products/vibro-massage-belt.jpg"
+    ],
+    "shortDescription": "Vibrating massage belt for waist toning and muscle relaxation.",
+    "description": "A vibrating massage belt that wraps the waist, hips or thighs to relax muscles and aid circulation. Multiple speed settings deliver a soothing post-workout massage at home.",
+    "features": [
+      "Multiple vibration speeds",
+      "Adjustable belt fit",
+      "Targets waist, hips & thighs",
+      "Aids muscle recovery",
+      "Simple plug-in operation"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Vibration massage"
+      },
+      {
+        "label": "Settings",
+        "value": "Multi-speed"
+      },
+      {
+        "label": "Fit",
+        "value": "Adjustable"
+      },
+      {
+        "label": "Use",
+        "value": "Recovery & toning"
+      }
+    ],
+    "stock": 50,
+    "sports": [
+      "recovery",
+      "wellness"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-85",
+    "slug": "10-pair-dumbbell-rack",
+    "name": "10 Pair Dumbbell Rack",
+    "sku": "DR10-2024",
+    "category": "storage",
+    "price": 495,
+    "level": "intermediate",
+    "rating": 4.7,
+    "reviewCount": 21,
+    "image": "/products/dumbbell-rack-10pair.jpg",
+    "gallery": [
+      "/products/dumbbell-rack-10pair.jpg"
+    ],
+    "shortDescription": "Two-tier commercial rack that stores up to ten pairs of dumbbells.",
+    "description": "A two-tier commercial dumbbell rack that keeps up to ten pairs of dumbbells tidy and within reach. Angled shelves make loading and racking easy, on a heavy, stable frame.",
+    "features": [
+      "Holds up to 10 pairs",
+      "Two angled tiers",
+      "Heavy commercial steel",
+      "Stable, wide base",
+      "Protects floors and dumbbells"
+    ],
+    "specs": [
+      {
+        "label": "Capacity",
+        "value": "10 pairs"
+      },
+      {
+        "label": "Tiers",
+        "value": "2"
+      },
+      {
+        "label": "Frame",
+        "value": "Commercial steel"
+      },
+      {
+        "label": "Use",
+        "value": "Dumbbell storage"
+      }
+    ],
+    "stock": 0,
+    "sports": [
+      "gym",
+      "home gym",
+      "organization"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-86",
+    "slug": "boxing-bandage",
+    "name": "Boxing Bandage",
+    "sku": "BXB-2024",
+    "category": "martial-arts",
+    "price": 5,
+    "level": "beginner",
+    "rating": 4.4,
+    "reviewCount": 130,
+    "image": "/products/boxing-bandage.jpg",
+    "gallery": [
+      "/products/boxing-bandage.jpg"
+    ],
+    "shortDescription": "Elasticated boxing hand wraps to protect wrists and knuckles.",
+    "description": "Elasticated boxing hand wraps that protect the wrists and knuckles under gloves. Sold from 5 m lengths with a thumb loop and hook-and-loop closure, in a range of colours.",
+    "features": [
+      "Protects wrists & knuckles",
+      "Stretch cotton blend",
+      "Thumb loop & hook-and-loop",
+      "From 5 m length",
+      "Machine washable"
+    ],
+    "specs": [
+      {
+        "label": "Length",
+        "value": "From 5 m"
+      },
+      {
+        "label": "Material",
+        "value": "Elastic cotton"
+      },
+      {
+        "label": "Closure",
+        "value": "Hook-and-loop"
+      },
+      {
+        "label": "Use",
+        "value": "Boxing & MMA"
+      }
+    ],
+    "stock": 200,
+    "sports": [
+      "boxing",
+      "martial arts"
     ],
     "estimatedDelivery": "3-5 business days"
   }
