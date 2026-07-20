@@ -1310,10 +1310,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.7,
     "reviewCount": 52,
-    "image": "https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/utility-bench.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/utility-bench.jpg"
     ],
     "shortDescription": "Versatile utility bench with multiple angle adjustments for comprehensive strength training.",
     "description": "Versatile utility bench with multiple angle adjustments for comprehensive strength training. Features heavy-duty construction and thick padding for comfort during various exercises.",
@@ -1583,9 +1582,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4.2,
     "reviewCount": 267,
-    "image": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gym%20gloves-nLwpVOQpxUrv0SKvpnAOdB93M8xLFh.jpeg",
+    "image": "/products/gym-gloves.jpg",
     "gallery": [
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gym%20gloves-nLwpVOQpxUrv0SKvpnAOdB93M8xLFh.jpeg"
+      "/products/gym-gloves.jpg"
     ],
     "shortDescription": "Professional fingerless gym gloves designed for weightlifting and strength training.",
     "description": "Professional fingerless gym gloves designed for weightlifting and strength training. Features gel palm padding, breathable mesh backing, and adjustable wrist support for enhanced grip and hand protection during intense workouts.",
@@ -1633,7 +1632,7 @@ export const PRODUCTS: Product[] = [
         "value": "Hand wash recommended"
       }
     ],
-    "stock": 25,
+    "stock": 0,
     "sports": [
       "gym",
       "home workout",
@@ -1652,9 +1651,9 @@ export const PRODUCTS: Product[] = [
     "rating": 4.9,
     "reviewCount": 12,
     "badge": "New",
-    "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/oxygen-concentrator.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/oxygen-concentrator.jpg"
     ],
     "shortDescription": "Medical-grade 5-liter oxygen concentrator for recovery and wellness applications.",
     "description": "Medical-grade 5-liter oxygen concentrator for recovery and wellness applications. Features quiet operation, digital display, and continuous oxygen delivery for enhanced recovery protocols.",
@@ -1720,9 +1719,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4.7,
     "reviewCount": 143,
-    "image": "https://images.unsplash.com/photo-1597076545399-91a3ff0e71b3?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/metal-kettlebells.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1597076545399-91a3ff0e71b3?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/metal-kettlebells.jpg"
     ],
     "shortDescription": "Professional cast iron kettlebells with wide handles for comfortable grip.",
     "description": "Professional cast iron kettlebells with wide handles for comfortable grip. Features smooth finish and flat bottom design for stability during exercises and storage.",
@@ -1781,18 +1780,18 @@ export const PRODUCTS: Product[] = [
   {
     "id": "hp-26",
     "slug": "resistance-band-set",
-    "name": "Resistance band set",
+    "name": "Fabric Resistance Band Set of 3",
     "sku": "RBS-2024",
     "category": "accessories",
-    "price": 20,
+    "price": 10,
     "level": "beginner",
     "rating": 4.3,
     "reviewCount": 198,
-    "image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/fabric-resistance-band.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/fabric-resistance-band.jpg"
     ],
-    "shortDescription": "Premium fabric resistance band set with 4 loop bands in different resistance levels.",
+    "shortDescription": "Set of three fabric loop resistance bands in light, medium and heavy.",
     "description": "Premium fabric resistance band set with 4 loop bands in different resistance levels. Perfect for glute activation, leg workouts, and full-body strength training with comfortable fabric construction.",
     "features": [
       "4 resistance levels in different colors",
@@ -1838,7 +1837,7 @@ export const PRODUCTS: Product[] = [
         "value": "0.35mm latex core"
       }
     ],
-    "stock": 90,
+    "stock": 0,
     "sports": [
       "gym",
       "home workout",
@@ -1856,10 +1855,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.4,
     "reviewCount": 76,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/adjustable-situp-bench.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1591258370814-01609b341790?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/adjustable-situp-bench.jpg"
     ],
     "shortDescription": "Professional adjustable sit-up bench with multiple angle settings for varied abdominal workouts.",
     "description": "Professional adjustable sit-up bench with multiple angle settings for varied abdominal workouts. Features padded leg rollers and sturdy steel frame construction for safe, effective core training.",
@@ -1996,10 +1994,9 @@ export const PRODUCTS: Product[] = [
     "rating": 4.8,
     "reviewCount": 25,
     "badge": "Pro Choice",
-    "image": "https://images.unsplash.com/photo-1541600383005-565c949cf777?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/power-rack.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1541600383005-565c949cf777?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/power-rack.jpg"
     ],
     "shortDescription": "Professional-grade power rack with integrated cable crossover system.",
     "description": "Professional-grade power rack with integrated cable crossover system. Features heavy-duty steel construction, dual weight stacks, adjustable safety bars, and multi-grip pull-up station for complete strength training workouts.",
@@ -2047,7 +2044,7 @@ export const PRODUCTS: Product[] = [
         "value": "3 years commercial"
       }
     ],
-    "stock": 5,
+    "stock": 0,
     "sports": [
       "gym",
       "strength",
@@ -2065,10 +2062,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.5,
     "reviewCount": 89,
-    "image": "https://images.unsplash.com/photo-1591117207239-788bf8de6c3b?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/punching-bag.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591117207239-788bf8de6c3b?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/punching-bag.jpg"
     ],
     "shortDescription": "Professional 20kg heavy punching bag made from durable synthetic leather.",
     "description": "Professional 20kg heavy punching bag made from durable synthetic leather. Features reinforced seams, heavy-duty chain attachment, and dense filling for effective boxing and martial arts training.",
@@ -2134,10 +2130,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.6,
     "reviewCount": 34,
-    "image": "https://images.unsplash.com/photo-1526401485004-46910ecc8e51?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/regular-plate-rack.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1526401485004-46910ecc8e51?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/regular-plate-rack.jpg"
     ],
     "shortDescription": "Heavy-duty weight plate storage rack designed to organize standard and Olympic plates.",
     "description": "Heavy-duty weight plate storage rack designed to organize standard and Olympic plates. Features multiple storage pegs and stable base construction for gym organization.",
@@ -2196,17 +2191,17 @@ export const PRODUCTS: Product[] = [
   {
     "id": "hp-32",
     "slug": "magnetic-bike",
-    "name": "Magnetic bike 915U",
+    "name": "Magnetic bike",
     "sku": "MB750-2024",
     "category": "cardio",
-    "price": 899,
+    "price": 750,
     "level": "pro",
     "rating": 4.4,
     "reviewCount": 67,
     "badge": "Sale",
-    "image": "/products/magnetic-bike-915u.jpg",
+    "image": "/products/magnetic-bike-750.jpg",
     "gallery": [
-      "/products/magnetic-bike-915u.jpg"
+      "/products/magnetic-bike-750.jpg"
     ],
     "shortDescription": "Premium magnetic resistance exercise bike with digital console and multiple workout programs.",
     "description": "Premium magnetic resistance exercise bike with digital console and multiple workout programs. Features quiet operation, adjustable seat, and smooth magnetic resistance system.",
@@ -2254,7 +2249,7 @@ export const PRODUCTS: Product[] = [
         "value": "Battery or AC adapter"
       }
     ],
-    "stock": 12,
+    "stock": 0,
     "sports": [
       "cardio",
       "conditioning",
@@ -2272,9 +2267,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4.1,
     "reviewCount": 245,
-    "image": "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/jump-rope.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/jump-rope.jpg"
     ],
     "shortDescription": "High-quality PVC jump rope with comfortable handles and adjustable length.",
     "description": "High-quality PVC jump rope with comfortable handles and adjustable length. Perfect for cardio workouts, boxing training, and improving coordination and endurance.",
@@ -2408,9 +2403,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.5,
     "reviewCount": 56,
-    "image": "https://images.unsplash.com/photo-1517963628607-235ccdd5476c?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/ez-olympic-curl.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1517963628607-235ccdd5476c?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/ez-olympic-curl.jpg"
     ],
     "shortDescription": "Olympic EZ curl bar designed for comfortable bicep and tricep exercises.",
     "description": "Olympic EZ curl bar designed for comfortable bicep and tricep exercises. Features angled grip design to reduce wrist strain and accommodate Olympic weight plates.",
@@ -2675,17 +2670,16 @@ export const PRODUCTS: Product[] = [
   {
     "id": "hp-39",
     "slug": "18m-olympic-barbell",
-    "name": "18m olympic barbell",
+    "name": "1.8m Olympic Barbell",
     "sku": "OB18-2024",
     "category": "accessories",
     "price": 60,
     "level": "intermediate",
     "rating": 4.6,
     "reviewCount": 78,
-    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/olympic-barbell.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/olympic-barbell.jpg"
     ],
     "shortDescription": "Professional 18m Olympic barbell designed for powerlifting and strength training.",
     "description": "Professional 18m Olympic barbell designed for powerlifting and strength training. Features rotating sleeves, aggressive knurling, and high tensile strength steel construction.",
@@ -2751,9 +2745,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.3,
     "reviewCount": 45,
-    "image": "https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/standard-tricep-bar.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1521805103424-d8f8430e8933?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/standard-tricep-bar.jpg"
     ],
     "shortDescription": "Standard tricep bar with parallel grip design for comfortable tricep and hammer curl exercises.",
     "description": "Standard tricep bar with parallel grip design for comfortable tricep and hammer curl exercises. Features neutral grip positioning to reduce wrist strain during arm workouts.",
@@ -2887,9 +2881,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4,
     "reviewCount": 456,
-    "image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/resistance-bands.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/resistance-bands.jpg"
     ],
     "shortDescription": "Set of loop resistance bands in multiple resistance levels.",
     "description": "Set of loop resistance bands in multiple resistance levels. Made from natural latex for durability and comfort, perfect for strength training, rehabilitation, and mobility exercises.",
@@ -3502,9 +3496,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4.4,
     "reviewCount": 89,
-    "image": "https://images.unsplash.com/photo-1597076545399-91a3ff0e71b3?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/cement-kettlebells.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1597076545399-91a3ff0e71b3?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/cement-kettlebells.jpg"
     ],
     "shortDescription": "Durable cement kettlebells offering excellent value for strength training.",
     "description": "Durable cement kettlebells offering excellent value for strength training. Features comfortable handle grip and solid concrete construction for effective functional fitness workouts.",
@@ -3847,9 +3841,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4.2,
     "reviewCount": 234,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/exercise-wheel.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/exercise-wheel.jpg"
     ],
     "shortDescription": "Dual-wheel ab roller designed for intense core strengthening exercises.",
     "description": "Dual-wheel ab roller designed for intense core strengthening exercises. Features comfortable grip handles and stable dual-wheel design for effective abdominal and core muscle development.",
@@ -3915,9 +3909,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4.1,
     "reviewCount": 189,
-    "image": "https://images.unsplash.com/photo-1518310952931-b1de897abd40?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/gym-balls.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1518310952931-b1de897abd40?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/gym-balls.jpg"
     ],
     "shortDescription": "Anti-burst exercise ball designed for core strengthening, balance training, and rehabilitation exercises.",
     "description": "Anti-burst exercise ball designed for core strengthening, balance training, and rehabilitation exercises. Features textured surface for enhanced grip and multiple size options.",
@@ -3983,9 +3977,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.6,
     "reviewCount": 78,
-    "image": "https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/rowing-machine.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/rowing-machine.jpg"
     ],
     "shortDescription": "Full-body rowing machine with smooth resistance system and comfortable seating.",
     "description": "Full-body rowing machine with smooth resistance system and comfortable seating. Provides excellent cardiovascular workout while targeting multiple muscle groups simultaneously.",
@@ -4051,9 +4045,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4,
     "reviewCount": 123,
-    "image": "https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/swimming-pull-buoy.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/swimming-pull-buoy.jpg"
     ],
     "shortDescription": "Swimming pull buoy designed to improve upper body strength and technique.",
     "description": "Swimming pull buoy designed to improve upper body strength and technique. Features ergonomic design and buoyant foam construction for effective swim training and stroke development.",
@@ -4118,9 +4112,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 3.9,
     "reviewCount": 167,
-    "image": "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/head-bands.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/head-bands.jpg"
     ],
     "shortDescription": "Moisture-wicking fitness headbands designed to keep sweat away from eyes during workouts.",
     "description": "Moisture-wicking fitness headbands designed to keep sweat away from eyes during workouts. Features comfortable elastic design and quick-dry fabric for all exercise activities.",
@@ -4187,10 +4181,9 @@ export const PRODUCTS: Product[] = [
     "rating": 4.4,
     "reviewCount": 45,
     "badge": "New",
-    "image": "https://images.unsplash.com/photo-1616279969856-759f316a5ac1?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/single-station-home-gym.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1616279969856-759f316a5ac1?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/single-station-home-gym.jpg"
     ],
     "shortDescription": "Compact single station home gym system offering multiple exercise options in space-efficient design.",
     "description": "Compact single station home gym system offering multiple exercise options in space-efficient design. Features weight stack system and versatile attachments for complete home workouts.",
@@ -4256,9 +4249,9 @@ export const PRODUCTS: Product[] = [
     "level": "pro",
     "rating": 4.8,
     "reviewCount": 8,
-    "image": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/interactive-boards.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/interactive-boards.jpg"
     ],
     "shortDescription": "75-inch interactive display board perfect for fitness studios, training facilities, and educational environments.",
     "description": "75-inch interactive display board perfect for fitness studios, training facilities, and educational environments. Features touch-screen technology and high-resolution display for interactive workouts and presentations.",
@@ -4869,6 +4862,199 @@ export const PRODUCTS: Product[] = [
     "sports": [
       "boxing",
       "martial arts"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-76",
+    "slug": "magnetic-bike-915u",
+    "name": "Magnetic bike 915U",
+    "sku": "MB915U-2024",
+    "category": "cardio",
+    "price": 899,
+    "level": "pro",
+    "rating": 4.6,
+    "reviewCount": 52,
+    "badge": "New",
+    "image": "/products/magnetic-bike-915u.jpg",
+    "gallery": [
+      "/products/magnetic-bike-915u.jpg"
+    ],
+    "shortDescription": "Premium upright magnetic exercise bike with a smart backlit console.",
+    "description": "The 915U upright magnetic bike delivers whisper-quiet magnetic resistance on a stable, commercial-grade frame. A backlit console tracks every metric while multiple resistance levels scale with your fitness.",
+    "features": [
+      "Whisper-quiet magnetic resistance",
+      "Multiple resistance levels",
+      "Backlit performance console",
+      "Commercial-grade frame",
+      "Adjustable seat"
+    ],
+    "specs": [
+      {
+        "label": "Resistance",
+        "value": "Magnetic, multi-level"
+      },
+      {
+        "label": "Console",
+        "value": "Backlit LCD"
+      },
+      {
+        "label": "Model",
+        "value": "915U"
+      },
+      {
+        "label": "Use",
+        "value": "Indoor cycling"
+      }
+    ],
+    "stock": 12,
+    "sports": [
+      "cycling",
+      "cardio"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-77",
+    "slug": "curved-treadmill",
+    "name": "Curved Treadmill",
+    "sku": "CTM-2024",
+    "category": "cardio",
+    "price": 1850,
+    "level": "pro",
+    "rating": 4.8,
+    "reviewCount": 24,
+    "image": "/products/curved-treadmill.jpg",
+    "gallery": [
+      "/products/curved-treadmill.jpg"
+    ],
+    "shortDescription": "Self-powered curved running deck for high-intensity sprint training.",
+    "description": "A motorless curved treadmill powered entirely by your stride. The curved slatted deck lets you sprint, push and recover naturally, burning more energy than a motorised belt. Rated for users up to 150 kg.",
+    "features": [
+      "Self-powered — no motor",
+      "Curved slatted running deck",
+      "Burns up to 30% more energy",
+      "Max user weight 150 kg",
+      "Low-maintenance design"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Curved / self-powered"
+      },
+      {
+        "label": "Max user weight",
+        "value": "150 kg"
+      },
+      {
+        "label": "Deck",
+        "value": "Slatted"
+      },
+      {
+        "label": "Use",
+        "value": "Sprint & HIIT"
+      }
+    ],
+    "stock": 0,
+    "sports": [
+      "running",
+      "cardio",
+      "crossfit"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-78",
+    "slug": "motor-treadmill-tft",
+    "name": "Motor Treadmill with TFT",
+    "sku": "MTT-2024",
+    "category": "cardio",
+    "price": 799,
+    "level": "pro",
+    "rating": 4.5,
+    "reviewCount": 41,
+    "image": "/products/motor-treadmill-tft.jpg",
+    "gallery": [
+      "/products/motor-treadmill-tft.jpg"
+    ],
+    "shortDescription": "Motorised treadmill with a full-colour TFT touchscreen console.",
+    "description": "Motorised treadmill with a vivid TFT touchscreen console for programs, entertainment and live stats. A cushioned deck and strong, quiet motor make daily running comfortable for users up to 120 kg.",
+    "features": [
+      "TFT touchscreen console",
+      "Cushioned running deck",
+      "Powerful, quiet motor",
+      "Max user weight 120 kg",
+      "Folds for storage"
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "TFT touchscreen"
+      },
+      {
+        "label": "Max user weight",
+        "value": "120 kg"
+      },
+      {
+        "label": "Deck",
+        "value": "Cushioned"
+      },
+      {
+        "label": "Type",
+        "value": "Motorised"
+      }
+    ],
+    "stock": 6,
+    "sports": [
+      "running",
+      "cardio"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-79",
+    "slug": "gas-geyser",
+    "name": "Gas Geyser",
+    "sku": "GAS-2024",
+    "category": "accessories",
+    "price": 169,
+    "level": "intermediate",
+    "rating": 4.4,
+    "reviewCount": 63,
+    "image": "/products/gas-geyser.jpg",
+    "gallery": [
+      "/products/gas-geyser.jpg"
+    ],
+    "shortDescription": "Instant gas water geyser — endless hot water, no electricity needed.",
+    "description": "Instant gas water geyser that heats water on demand without electricity — ideal for load-shedding. Available in 16L ($169), 18L ($179) and 20L ($199) capacities to suit any household.",
+    "features": [
+      "Instant on-demand hot water",
+      "Runs on LP or natural gas",
+      "No electricity required",
+      "Available in 16L / 18L / 20L",
+      "Flame-out safety protection"
+    ],
+    "specs": [
+      {
+        "label": "Capacity",
+        "value": "16L / 18L / 20L"
+      },
+      {
+        "label": "Fuel",
+        "value": "Gas (LP / natural)"
+      },
+      {
+        "label": "Ignition",
+        "value": "Battery"
+      },
+      {
+        "label": "Use",
+        "value": "Domestic hot water"
+      }
+    ],
+    "stock": 30,
+    "sports": [
+      "home"
     ],
     "estimatedDelivery": "3-5 business days"
   }
