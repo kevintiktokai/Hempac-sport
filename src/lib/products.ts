@@ -140,16 +140,16 @@ export const PRODUCTS: Product[] = [
   {
     "id": "hp-02",
     "slug": "mini-wondercore",
-    "name": "Mini wondercore",
+    "name": "Wonder core",
     "sku": "MWC-2024",
     "category": "accessories",
     "price": 80,
     "level": "intermediate",
     "rating": 4.1,
     "reviewCount": 67,
-    "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/wonder-core.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/wonder-core.jpg"
     ],
     "shortDescription": "Compact and versatile core training system that provides multiple exercise options in one portable unit.",
     "description": "Compact and versatile core training system that provides multiple exercise options in one portable unit. Perfect for home workouts and targeting abdominal muscles with various resistance levels.",
@@ -423,9 +423,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4.2,
     "reviewCount": 89,
-    "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/yoga-foam-roller.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/yoga-foam-roller.jpg"
     ],
     "shortDescription": "High-density foam roller designed for muscle recovery and myofascial release.",
     "description": "High-density foam roller designed for muscle recovery and myofascial release. Perfect for post-workout recovery, improving flexibility, and reducing muscle tension.",
@@ -559,9 +559,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 3.8,
     "reviewCount": 234,
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/waist-trainer.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/waist-trainer.jpg"
     ],
     "shortDescription": "Adjustable waist trainer made from high-quality neoprene material.",
     "description": "Adjustable waist trainer made from high-quality neoprene material. Provides core support during workouts and helps maintain proper posture throughout daily activities.",
@@ -623,14 +623,13 @@ export const PRODUCTS: Product[] = [
     "name": "Rubber hex dumbbell",
     "sku": "RHD-2024",
     "category": "strength",
-    "price": 2.5,
+    "price": 3,
     "level": "beginner",
     "rating": 4.6,
     "reviewCount": 89,
-    "image": "https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/rubber-hex-dumbbell.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/rubber-hex-dumbbell.jpg"
     ],
     "shortDescription": "Professional-grade rubber hex dumbbells with anti-roll design.",
     "description": "Professional-grade rubber hex dumbbells with anti-roll design. Features durable rubber coating to protect floors and reduce noise, with comfortable knurled handles for secure grip.",
@@ -832,9 +831,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4.2,
     "reviewCount": 178,
-    "image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/resistance-band-handles.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/resistance-band-handles.jpg"
     ],
     "shortDescription": "High-quality resistance bands with comfortable foam handles.",
     "description": "High-quality resistance bands with comfortable foam handles. Perfect for strength training, rehabilitation, and full-body workouts. Includes multiple resistance levels for progressive training.",
@@ -900,9 +899,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 3.9,
     "reviewCount": 92,
-    "image": "https://images.unsplash.com/photo-1483721310020-03333e577078?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/waist-pouch.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1483721310020-03333e577078?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/waist-pouch.jpg"
     ],
     "shortDescription": "Lightweight waist pouch perfect for carrying essentials during workouts and outdoor activities.",
     "description": "Lightweight waist pouch perfect for carrying essentials during workouts and outdoor activities. Features multiple compartments and adjustable strap for secure, comfortable fit.",
@@ -950,7 +949,7 @@ export const PRODUCTS: Product[] = [
         "value": "Black, Gray, Blue"
       }
     ],
-    "stock": 0,
+    "stock": 60,
     "sports": [
       "gym",
       "home workout",
@@ -1033,13 +1032,13 @@ export const PRODUCTS: Product[] = [
     "name": "Mini Stepper",
     "sku": "MS-2024",
     "category": "cardio",
-    "price": 75,
+    "price": 115,
     "level": "intermediate",
     "rating": 4.1,
     "reviewCount": 87,
-    "image": "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/mini-stepper.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/mini-stepper.jpg"
     ],
     "shortDescription": "Compact mini stepper with resistance bands for upper and lower body workouts.",
     "description": "Compact mini stepper with resistance bands for upper and lower body workouts. Perfect for home cardio exercise with adjustable step height and digital display.",
@@ -1087,7 +1086,7 @@ export const PRODUCTS: Product[] = [
         "value": "Compact design"
       }
     ],
-    "stock": 0,
+    "stock": 20,
     "sports": [
       "cardio",
       "conditioning",
@@ -1101,14 +1100,13 @@ export const PRODUCTS: Product[] = [
     "name": "Neoprene dumbbells per kg",
     "sku": "ND-2024",
     "category": "strength",
-    "price": 2.5,
+    "price": 3,
     "level": "beginner",
     "rating": 4.4,
     "reviewCount": 156,
-    "image": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/neoprene-dumbbells.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/neoprene-dumbbells.jpg"
     ],
     "shortDescription": "Comfortable neoprene-coated dumbbells available in various weights.",
     "description": "Comfortable neoprene-coated dumbbells available in various weights. Features soft, non-slip coating that's easy on hands and floors, perfect for home fitness routines.",
@@ -1174,10 +1172,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.5,
     "reviewCount": 29,
-    "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/single-station.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1596357395217-80de13130e92?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/single-station.jpg"
     ],
     "shortDescription": "Versatile single station home gym system offering multiple exercise options in a compact design.",
     "description": "Versatile single station home gym system offering multiple exercise options in a compact design. Features smooth pulley system and adjustable weight stack for full-body workouts.",
@@ -1382,9 +1379,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.8,
     "reviewCount": 23,
-    "image": "https://images.unsplash.com/photo-1597076545399-91a3ff0e71b3?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/kettlebell-rack.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1597076545399-91a3ff0e71b3?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/kettlebell-rack.jpg"
     ],
     "shortDescription": "Heavy-duty kettlebell storage rack designed to organize and display your kettlebell collection.",
     "description": "Heavy-duty kettlebell storage rack designed to organize and display your kettlebell collection. Features two-tier design with durable steel construction and powder-coated finish for gym and home use.",
@@ -1450,9 +1447,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4.2,
     "reviewCount": 189,
-    "image": "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/door-gym.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/door-gym.jpg"
     ],
     "shortDescription": "Multi-grip door gym pull-up bar that requires no screws or permanent installation.",
     "description": "Multi-grip door gym pull-up bar that requires no screws or permanent installation. Features comfortable foam padding and multiple grip positions for various upper body exercises.",
@@ -1518,9 +1515,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.6,
     "reviewCount": 31,
-    "image": "https://images.unsplash.com/photo-1596357395217-80de13130e92?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/calf-raise-machine.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1596357395217-80de13130e92?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/calf-raise-machine.jpg"
     ],
     "shortDescription": "Professional seated calf raise machine with weight stack system for isolated calf muscle development.",
     "description": "Professional seated calf raise machine with weight stack system for isolated calf muscle development. Features padded seat, adjustable knee pads, and foot platform for optimal positioning and comfort during workouts.",
@@ -2199,17 +2196,17 @@ export const PRODUCTS: Product[] = [
   {
     "id": "hp-32",
     "slug": "magnetic-bike",
-    "name": "Magnetic bike",
+    "name": "Magnetic bike 915U",
     "sku": "MB750-2024",
     "category": "cardio",
-    "price": 750,
+    "price": 899,
     "level": "pro",
     "rating": 4.4,
     "reviewCount": 67,
     "badge": "Sale",
-    "image": "https://images.unsplash.com/photo-1591741535018-d042766c62eb?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/magnetic-bike-915u.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591741535018-d042766c62eb?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/magnetic-bike-915u.jpg"
     ],
     "shortDescription": "Premium magnetic resistance exercise bike with digital console and multiple workout programs.",
     "description": "Premium magnetic resistance exercise bike with digital console and multiple workout programs. Features quiet operation, adjustable seat, and smooth magnetic resistance system.",
@@ -2257,7 +2254,7 @@ export const PRODUCTS: Product[] = [
         "value": "Battery or AC adapter"
       }
     ],
-    "stock": 0,
+    "stock": 12,
     "sports": [
       "cardio",
       "conditioning",
@@ -2549,9 +2546,9 @@ export const PRODUCTS: Product[] = [
     "rating": 4.7,
     "reviewCount": 42,
     "badge": "New",
-    "image": "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/treadmill.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/treadmill.jpg"
     ],
     "shortDescription": "Semi-commercial treadmill designed for heavy home use and light commercial applications.",
     "description": "Semi-commercial treadmill designed for heavy home use and light commercial applications. Features powerful motor, large running surface, and advanced console with multiple workout programs.",
@@ -2822,9 +2819,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4.2,
     "reviewCount": 89,
-    "image": "https://images.unsplash.com/photo-1591741535018-d042766c62eb?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/magnetic-bike.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591741535018-d042766c62eb?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/magnetic-bike.jpg"
     ],
     "shortDescription": "Compact magnetic exercise bike perfect for home cardio workouts.",
     "description": "Compact magnetic exercise bike perfect for home cardio workouts. Features quiet magnetic resistance, basic console display, and space-saving design for smaller workout areas.",
@@ -3094,10 +3091,9 @@ export const PRODUCTS: Product[] = [
     "level": "pro",
     "rating": 4.6,
     "reviewCount": 54,
-    "image": "https://images.unsplash.com/photo-1591741535018-d042766c62eb?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/air-bike.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1591741535018-d042766c62eb?w=900&h=900&fit=crop&q=80&auto=format",
-      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/air-bike.jpg"
     ],
     "shortDescription": "High-intensity air bike with fan resistance system for full-body cardio workouts.",
     "description": "High-intensity air bike with fan resistance system for full-body cardio workouts. Features moving handlebars, unlimited resistance, and robust construction for intense training sessions.",
@@ -3163,9 +3159,9 @@ export const PRODUCTS: Product[] = [
     "level": "intermediate",
     "rating": 4,
     "reviewCount": 78,
-    "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/crazy-fit.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/crazy-fit.jpg"
     ],
     "shortDescription": "Vibration platform machine designed for low-impact fitness and muscle toning.",
     "description": "Vibration platform machine designed for low-impact fitness and muscle toning. Features multiple vibration programs, adjustable intensity, and compact design for home use.",
@@ -3213,7 +3209,7 @@ export const PRODUCTS: Product[] = [
         "value": "35 lbs"
       }
     ],
-    "stock": 12,
+    "stock": 0,
     "sports": [
       "cardio",
       "conditioning",
@@ -3301,9 +3297,9 @@ export const PRODUCTS: Product[] = [
     "level": "beginner",
     "rating": 4.1,
     "reviewCount": 189,
-    "image": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=900&h=900&fit=crop&q=80&auto=format",
+    "image": "/products/knee-guard.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=900&h=900&fit=crop&q=80&auto=format"
+      "/products/knee-guard.jpg"
     ],
     "shortDescription": "Supportive knee guard designed for sports and exercise activities.",
     "description": "Supportive knee guard designed for sports and exercise activities. Features adjustable straps, breathable material, and compression support for knee stability and injury prevention.",
@@ -4317,6 +4313,564 @@ export const PRODUCTS: Product[] = [
       "fitness"
     ],
     "estimatedDelivery": "7-10 business days"
+  },
+  {
+    "id": "hp-64",
+    "slug": "squat-machine",
+    "name": "Squat Machine",
+    "sku": "SQM-2024",
+    "category": "strength",
+    "price": 90,
+    "level": "intermediate",
+    "rating": 4.4,
+    "reviewCount": 52,
+    "image": "/products/squat-machine.jpg",
+    "gallery": [
+      "/products/squat-machine.jpg"
+    ],
+    "shortDescription": "Guided squat trainer that builds leg strength while supporting your back and knees.",
+    "description": "Compact squat trainer that guides you through deep, controlled squats while supporting your back and knees. A space-saving way to build powerful legs and glutes at home.",
+    "features": [
+      "Guided squat movement path",
+      "Padded back and knee support",
+      "Non-slip foot plates",
+      "Adjustable resistance",
+      "Folds flat for storage"
+    ],
+    "specs": [
+      {
+        "label": "Weight capacity",
+        "value": "120 kg"
+      },
+      {
+        "label": "Material",
+        "value": "Steel"
+      },
+      {
+        "label": "Resistance",
+        "value": "Adjustable"
+      },
+      {
+        "label": "Use",
+        "value": "Legs & glutes"
+      }
+    ],
+    "stock": 14,
+    "sports": [
+      "gym",
+      "strength",
+      "home workout"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-65",
+    "slug": "standard-plates",
+    "name": "Standard Plates (per kg)",
+    "sku": "STP-2024",
+    "category": "strength",
+    "price": 3,
+    "level": "beginner",
+    "rating": 4.6,
+    "reviewCount": 140,
+    "image": "/products/standard-plates.jpg",
+    "gallery": [
+      "/products/standard-plates.jpg"
+    ],
+    "shortDescription": "Cast-iron standard weight plates with a 25 mm bore, sold per kilogram.",
+    "description": "Cast-iron standard weight plates with a 1-inch (25 mm) bore, sold per kilogram. Accurately weighted and durable, they fit standard bars and dumbbell handles for endless loading options.",
+    "features": [
+      "Cast-iron construction",
+      "25 mm standard bore",
+      "Sold per kilogram",
+      "Fits standard bars & dumbbells",
+      "Durable enamel finish"
+    ],
+    "specs": [
+      {
+        "label": "Bore",
+        "value": "25 mm standard"
+      },
+      {
+        "label": "Material",
+        "value": "Cast iron"
+      },
+      {
+        "label": "Sold by",
+        "value": "Per kg"
+      },
+      {
+        "label": "Finish",
+        "value": "Enamel"
+      }
+    ],
+    "stock": 300,
+    "sports": [
+      "gym",
+      "strength"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-66",
+    "slug": "decline-bench-commercial",
+    "name": "Decline Bench Commercial",
+    "sku": "DBC-2024",
+    "category": "strength",
+    "price": 799,
+    "level": "pro",
+    "rating": 4.7,
+    "reviewCount": 38,
+    "badge": "Pro Choice",
+    "image": "/products/decline-bench.jpg",
+    "gallery": [
+      "/products/decline-bench.jpg"
+    ],
+    "shortDescription": "Heavy-duty commercial decline bench with an integrated barbell rack.",
+    "description": "Commercial decline bench built from thick-gauge steel with an integrated barbell rack. Engineered for stable, high-load decline pressing in busy gyms and serious home setups.",
+    "features": [
+      "Commercial thick-gauge steel frame",
+      "Integrated barbell rack",
+      "High weight capacity",
+      "Sweat-resistant upholstery",
+      "Wide, stable base"
+    ],
+    "specs": [
+      {
+        "label": "Frame",
+        "value": "Heavy steel"
+      },
+      {
+        "label": "Capacity",
+        "value": "400 kg"
+      },
+      {
+        "label": "Type",
+        "value": "Decline"
+      },
+      {
+        "label": "Use",
+        "value": "Commercial"
+      }
+    ],
+    "stock": 6,
+    "sports": [
+      "gym",
+      "strength"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-67",
+    "slug": "safety-key",
+    "name": "Treadmill Safety Key",
+    "sku": "TSK-2024",
+    "category": "accessories",
+    "price": 20,
+    "level": "beginner",
+    "rating": 4.3,
+    "reviewCount": 74,
+    "image": "/products/safety-key.jpg",
+    "gallery": [
+      "/products/safety-key.jpg"
+    ],
+    "shortDescription": "Universal magnetic treadmill safety key with a coiled cord and clip.",
+    "description": "Universal magnetic treadmill safety key with a coiled stretch cord and garment clip. Instantly cuts the belt if you drift too far back — an essential spare or replacement for most treadmills.",
+    "features": [
+      "Magnetic safety cutoff",
+      "Coiled stretch cord",
+      "Secure garment clip",
+      "Universal fit for most treadmills"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Magnetic"
+      },
+      {
+        "label": "Fit",
+        "value": "Universal"
+      },
+      {
+        "label": "Cord",
+        "value": "Coiled"
+      }
+    ],
+    "stock": 120,
+    "sports": [
+      "cardio"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-68",
+    "slug": "calf-raise",
+    "name": "Calf Raise",
+    "sku": "CFR-2024",
+    "category": "strength",
+    "price": 290,
+    "level": "intermediate",
+    "rating": 4.5,
+    "reviewCount": 41,
+    "image": "/products/calf-raise.jpg",
+    "gallery": [
+      "/products/calf-raise.jpg"
+    ],
+    "shortDescription": "Seated calf raise machine that isolates and overloads the calves.",
+    "description": "Seated calf raise machine that isolates and overloads the calves through a full range of motion. A padded knee lever and easy plate loading make progressive calf training simple.",
+    "features": [
+      "Isolates the calf muscles",
+      "Padded knee lever",
+      "Plate-loaded resistance",
+      "Full range of motion",
+      "Compact footprint"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Seated calf raise"
+      },
+      {
+        "label": "Loading",
+        "value": "Plate-loaded"
+      },
+      {
+        "label": "Capacity",
+        "value": "200 kg"
+      },
+      {
+        "label": "Use",
+        "value": "Legs"
+      }
+    ],
+    "stock": 7,
+    "sports": [
+      "gym",
+      "strength"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-69",
+    "slug": "8-station-commercial-gym",
+    "name": "8 Station Commercial Gym",
+    "sku": "8SG-2024",
+    "category": "strength",
+    "price": 7500,
+    "level": "pro",
+    "rating": 4.9,
+    "reviewCount": 18,
+    "badge": "Pro Choice",
+    "image": "/products/8-station-gym.jpg",
+    "gallery": [
+      "/products/8-station-gym.jpg"
+    ],
+    "shortDescription": "Complete 8-station multi-gym engineered for commercial studios.",
+    "description": "A complete 8-station multi-gym engineered for commercial studios. Eight independent stations let a full group train every major muscle group at once, on a durable commercial-grade frame and cable system.",
+    "features": [
+      "8 independent training stations",
+      "Commercial-grade steel frame",
+      "High-density weight stacks",
+      "Supports multiple simultaneous users",
+      "Durable cable and pulley system"
+    ],
+    "specs": [
+      {
+        "label": "Stations",
+        "value": "8"
+      },
+      {
+        "label": "Frame",
+        "value": "Commercial steel"
+      },
+      {
+        "label": "Users",
+        "value": "Up to 8"
+      },
+      {
+        "label": "Use",
+        "value": "Commercial gym"
+      }
+    ],
+    "stock": 3,
+    "sports": [
+      "gym",
+      "strength"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-70",
+    "slug": "chest-expander",
+    "name": "Chest Expander",
+    "sku": "CXP-2024",
+    "category": "accessories",
+    "price": 10,
+    "level": "beginner",
+    "rating": 4.2,
+    "reviewCount": 96,
+    "image": "/products/chest-expander.jpg",
+    "gallery": [
+      "/products/chest-expander.jpg"
+    ],
+    "shortDescription": "Adjustable 5-spring chest expander for chest, shoulder and arm strength.",
+    "description": "Adjustable spring chest expander for building chest, shoulder and arm strength. Add or remove the steel springs to set exactly the resistance you want, then train anywhere.",
+    "features": [
+      "5 removable steel springs",
+      "Foam-grip handles",
+      "Adjustable resistance",
+      "Compact and portable"
+    ],
+    "specs": [
+      {
+        "label": "Springs",
+        "value": "5 removable"
+      },
+      {
+        "label": "Grips",
+        "value": "Foam"
+      },
+      {
+        "label": "Resistance",
+        "value": "Adjustable"
+      }
+    ],
+    "stock": 130,
+    "sports": [
+      "strength",
+      "home workout"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-71",
+    "slug": "waist-twister",
+    "name": "Waist Twister",
+    "sku": "WTW-2024",
+    "category": "accessories",
+    "price": 10,
+    "level": "beginner",
+    "rating": 4.3,
+    "reviewCount": 112,
+    "image": "/products/waist-twister.jpg",
+    "gallery": [
+      "/products/waist-twister.jpg"
+    ],
+    "shortDescription": "Acupressure waist-twisting disc for a low-impact core workout.",
+    "description": "Acupressure waist-twisting disc that works your core and obliques while stimulating pressure points underfoot. A fun, low-impact way to warm up, wind down or trim the waistline.",
+    "features": [
+      "Twists the core and obliques",
+      "Acupressure foot nodes",
+      "Non-slip surface",
+      "Compact home trainer"
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Twist board"
+      },
+      {
+        "label": "Surface",
+        "value": "Acupressure"
+      },
+      {
+        "label": "Use",
+        "value": "Core"
+      }
+    ],
+    "stock": 150,
+    "sports": [
+      "home workout"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-72",
+    "slug": "20kg-epoxy-dumbbell",
+    "name": "20kg Epoxy Dumbbell Set",
+    "sku": "EPD20-2024",
+    "category": "strength",
+    "price": 80,
+    "level": "intermediate",
+    "rating": 4.7,
+    "reviewCount": 88,
+    "badge": "Best Seller",
+    "image": "/products/20kg-epoxy-dumbbell.jpg",
+    "gallery": [
+      "/products/20kg-epoxy-dumbbell.jpg"
+    ],
+    "shortDescription": "20 kg adjustable epoxy dumbbell set in a moulded carry case.",
+    "description": "A 20 kg adjustable epoxy dumbbell set in a moulded carry case. Swap the coated plates and join the handles to form a single barbell — a complete free-weight set that packs away in one box.",
+    "features": [
+      "20 kg total adjustable weight",
+      "Epoxy-coated plates",
+      "Handles connect into a barbell",
+      "Moulded carry case",
+      "Quick-lock collars"
+    ],
+    "specs": [
+      {
+        "label": "Total weight",
+        "value": "20 kg"
+      },
+      {
+        "label": "Plates",
+        "value": "Epoxy-coated"
+      },
+      {
+        "label": "Type",
+        "value": "Adjustable"
+      },
+      {
+        "label": "Includes",
+        "value": "Case + collars"
+      }
+    ],
+    "stock": 40,
+    "sports": [
+      "gym",
+      "strength"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-73",
+    "slug": "15kg-epoxy-dumbbell-set",
+    "name": "15kg Epoxy Dumbbell Set",
+    "sku": "EPD15-2024",
+    "category": "strength",
+    "price": 60,
+    "level": "intermediate",
+    "rating": 4.6,
+    "reviewCount": 73,
+    "image": "/products/15kg-epoxy-dumbbell.jpg",
+    "gallery": [
+      "/products/15kg-epoxy-dumbbell.jpg"
+    ],
+    "shortDescription": "15 kg adjustable epoxy dumbbell set — two 7.5 kg dumbbells in a case.",
+    "description": "A 15 kg adjustable epoxy dumbbell set: two 7.5 kg dumbbells with coated plates and secure collars, packed in a moulded case for clean, quiet home training.",
+    "features": [
+      "2 x 7.5 kg dumbbells",
+      "Epoxy-coated plates",
+      "Secure locking collars",
+      "Connect into a barbell",
+      "Moulded carry case"
+    ],
+    "specs": [
+      {
+        "label": "Total weight",
+        "value": "15 kg"
+      },
+      {
+        "label": "Configuration",
+        "value": "2 x 7.5 kg"
+      },
+      {
+        "label": "Plates",
+        "value": "Epoxy-coated"
+      },
+      {
+        "label": "Includes",
+        "value": "Case"
+      }
+    ],
+    "stock": 50,
+    "sports": [
+      "gym",
+      "strength"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-74",
+    "slug": "vertical-bench-commercial",
+    "name": "Vertical Bench Commercial",
+    "sku": "VBC-2024",
+    "category": "strength",
+    "price": 1099,
+    "level": "pro",
+    "rating": 4.6,
+    "reviewCount": 22,
+    "image": "/products/vertical-bench.jpg",
+    "gallery": [
+      "/products/vertical-bench.jpg"
+    ],
+    "shortDescription": "Commercial vertical bench for heavy, guided lower-body work.",
+    "description": "Commercial vertical bench with a supportive contoured seat and guided movement path. Built from heavy steel for safe, high-load lower-body training on busy floors.",
+    "features": [
+      "Commercial steel frame",
+      "Supportive contoured seat",
+      "Guided movement path",
+      "High weight capacity",
+      "Stable wide base"
+    ],
+    "specs": [
+      {
+        "label": "Frame",
+        "value": "Commercial steel"
+      },
+      {
+        "label": "Capacity",
+        "value": "300 kg"
+      },
+      {
+        "label": "Type",
+        "value": "Vertical bench"
+      },
+      {
+        "label": "Use",
+        "value": "Commercial"
+      }
+    ],
+    "stock": 0,
+    "sports": [
+      "gym",
+      "strength"
+    ],
+    "estimatedDelivery": "3-5 business days"
+  },
+  {
+    "id": "hp-75",
+    "slug": "kick-boxing-gloves",
+    "name": "Kick Boxing Gloves",
+    "sku": "KBG-2024",
+    "category": "martial-arts",
+    "price": 10,
+    "level": "beginner",
+    "rating": 4.4,
+    "reviewCount": 64,
+    "image": "/products/kickboxing-gloves.jpg",
+    "gallery": [
+      "/products/kickboxing-gloves.jpg"
+    ],
+    "shortDescription": "Durable kickboxing gloves with dense foam and a secure wrist strap.",
+    "description": "Durable kickboxing gloves with dense multi-layer foam padding and a secure wrist strap. Ready for bag work, pad drills and light sparring straight out of the box.",
+    "features": [
+      "Dense multi-layer foam",
+      "Secure hook-and-loop wrist",
+      "Breathable lining",
+      "Durable synthetic shell"
+    ],
+    "specs": [
+      {
+        "label": "Padding",
+        "value": "Multi-layer foam"
+      },
+      {
+        "label": "Closure",
+        "value": "Hook-and-loop"
+      },
+      {
+        "label": "Use",
+        "value": "Bag & sparring"
+      }
+    ],
+    "stock": 90,
+    "sports": [
+      "boxing",
+      "martial arts"
+    ],
+    "estimatedDelivery": "3-5 business days"
   }
 ];
 
