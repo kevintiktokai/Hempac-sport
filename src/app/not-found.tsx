@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PillLink } from "@/components/Pill";
 
 export default function NotFound() {
@@ -10,9 +11,27 @@ export default function NotFound() {
       <p className="mt-2 max-w-sm text-sm text-ink/50">
         The page you&apos;re looking for doesn&apos;t exist or has been moved.
       </p>
-      <PillLink href="/shop" className="mt-8">
-        Back to the Shop
-      </PillLink>
+      <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <PillLink href="/shop">Back to the Shop</PillLink>
+        <PillLink href="/quiz" variant="outline">
+          Find My Gear
+        </PillLink>
+      </div>
+      <p className="mt-8 text-xs text-ink/50">
+        Or try the{" "}
+        <Link href="/blog" className="underline hover:text-ink">
+          journal
+        </Link>
+        ,{" "}
+        <Link href="/faq" className="underline hover:text-ink">
+          FAQ
+        </Link>{" "}
+        or{" "}
+        <Link href="/contact" className="underline hover:text-ink">
+          contact us
+        </Link>
+        .
+      </p>
     </div>
   );
 }

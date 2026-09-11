@@ -8,6 +8,7 @@ import ProductActions from "@/components/shop/ProductActions";
 import ProductCard from "@/components/ProductCard";
 import RatingStars from "@/components/RatingStars";
 import { CheckIcon, TruckIcon, ShieldIcon } from "@/components/icons";
+import { SITE, SITE_URL } from "@/lib/site";
 
 export function generateStaticParams() {
   return PRODUCTS.map((p) => ({ slug: p.slug }));
@@ -24,6 +25,20 @@ export async function generateMetadata({
   return {
     title: product.name,
     description: product.shortDescription,
+    alternates: { canonical: `/shop/${product.slug}` },
+    openGraph: {
+      type: "website",
+      title: product.name,
+      description: product.shortDescription,
+      url: `/shop/${product.slug}`,
+      images: [{ url: product.image, alt: product.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: product.name,
+      description: product.shortDescription,
+      images: [product.image],
+    },
   };
 }
 
@@ -38,9 +53,59 @@ export default async function ProductPage({
 
   const category = getCategory(product.category);
   const related = relatedProducts(product);
+  const url = `${SITE_URL}/shop/${product.slug}`;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        name: product.name,
+        description: product.description,
+        image: product.gallery,
+        sku: product.sku,
+        category: category?.name,
+        brand: { "@type": "Brand", name: SITE.name },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: product.rating,
+          reviewCount: product.reviewCount,
+        },
+        offers: {
+          "@type": "Offer",
+          url,
+          price: product.price,
+          priceCurrency: "USD",
+          availability:
+            product.stock > 0
+              ? "https://schema.org/InStock"
+              : "https://schema.org/OutOfStock",
+          seller: { "@id": `${SITE_URL}/#organization` },
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+          { "@type": "ListItem", position: 2, name: "Shop", item: `${SITE_URL}/shop` },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: category?.name ?? "Products",
+            item: `${SITE_URL}/shop?category=${product.category}`,
+          },
+          { "@type": "ListItem", position: 4, name: product.name, item: url },
+        ],
+      },
+    ],
+  };
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <nav className="text-sm text-ink/50" aria-label="Breadcrumb">
         <Link href="/" className="hover:text-ink">Home</Link>
         <span className="mx-2">/</span>
@@ -107,18 +172,24 @@ export default async function ProductPage({
           </ul>
 
           <div className="mt-8 grid grid-cols-2 gap-4">
-            <div className="flex items-center gap-3 rounded-2xl bg-mist p-4">
+            <Link
+              href="/shipping-returns"
+              className="flex items-center gap-3 rounded-2xl bg-mist p-4 transition-colors hover:bg-line"
+            >
               <TruckIcon className="h-5 w-5 shrink-0 text-ember" />
-              <p className="text-xs leading-snug text-ink/70">
+              <span className="text-xs leading-snug text-ink/70">
                 Free shipping on orders over $75
-              </p>
-            </div>
-            <div className="flex items-center gap-3 rounded-2xl bg-mist p-4">
+              </span>
+            </Link>
+            <Link
+              href="/warranty"
+              className="flex items-center gap-3 rounded-2xl bg-mist p-4 transition-colors hover:bg-line"
+            >
               <ShieldIcon className="h-5 w-5 shrink-0 text-ember" />
-              <p className="text-xs leading-snug text-ink/70">
+              <span className="text-xs leading-snug text-ink/70">
                 2-year warranty &amp; 30-day returns
-              </p>
-            </div>
+              </span>
+            </Link>
           </div>
         </div>
       </div>

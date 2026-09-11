@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CATEGORIES } from "@/lib/products";
+import NewsletterForm from "./NewsletterForm";
 
 export default function Footer() {
   return (
@@ -30,20 +31,10 @@ export default function Footer() {
               built to last. From strength and cardio to recovery, we equip
               gyms, studios and home athletes.
             </p>
-            <form className="mt-8 flex max-w-sm items-center rounded-full border border-white/20 p-1.5">
-              <input
-                type="email"
-                placeholder="Your email"
-                aria-label="Email for newsletter"
-                className="w-full bg-transparent px-4 text-sm outline-none placeholder:text-white/40"
-              />
-              <button
-                type="button"
-                className="shrink-0 rounded-full bg-white px-5 py-2 text-sm font-medium text-ink transition-opacity hover:opacity-90"
-              >
-                Subscribe
-              </button>
-            </form>
+            <p className="mt-8 text-xs font-semibold uppercase tracking-wider text-white/40">
+              One useful email a month
+            </p>
+            <NewsletterForm className="mt-3 max-w-sm" />
           </div>
 
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-7">
@@ -82,10 +73,10 @@ export default function Footer() {
               </p>
               <ul className="mt-4 space-y-3 text-sm">
                 <li><Link href="/contact" className="text-white/70 hover:text-white">Contact Us</Link></li>
+                <li><Link href="/faq" className="text-white/70 hover:text-white">FAQ</Link></li>
+                <li><Link href="/shipping-returns" className="text-white/70 hover:text-white">Shipping &amp; Returns</Link></li>
+                <li><Link href="/warranty" className="text-white/70 hover:text-white">2-Year Warranty</Link></li>
                 <li><Link href="/wishlist" className="text-white/70 hover:text-white">Wishlist</Link></li>
-                <li><Link href="/cart" className="text-white/70 hover:text-white">Cart</Link></li>
-                <li><span className="text-white/70">Shipping &amp; Returns</span></li>
-                <li><span className="text-white/70">2-Year Warranty</span></li>
               </ul>
             </div>
           </div>
@@ -93,7 +84,11 @@ export default function Footer() {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/40 sm:flex-row sm:items-center">
           <p>© {new Date().getFullYear()} HEMPAC Sport. All rights reserved.</p>
-          <p>Free shipping over $75 · 30-day returns · 2-year warranty</p>
+          <nav className="flex flex-wrap items-center gap-x-5 gap-y-2" aria-label="Legal">
+            <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-white">Terms of Service</Link>
+            <span>Free shipping over $75 · 30-day returns</span>
+          </nav>
         </div>
       </div>
     </footer>

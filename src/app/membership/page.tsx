@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Membership",
   description:
     "Earn points on every purchase and unlock Bronze, Silver and Gold rewards — discounts, free shipping, early access and more with HEMPAC Rewards.",
+  alternates: { canonical: "/membership" },
 };
 
 const TIERS = [

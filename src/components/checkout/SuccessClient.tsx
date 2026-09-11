@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { formatPrice } from "@/lib/format";
 import { PillLink } from "@/components/Pill";
@@ -67,6 +68,22 @@ export default function SuccessClient() {
           Back to Home
         </PillLink>
       </div>
+
+      <p className="mt-10 text-xs leading-relaxed text-ink/50">
+        Need a hand? Read about{" "}
+        <Link href="/shipping-returns" className="underline hover:text-ink">
+          delivery and returns
+        </Link>
+        , check the{" "}
+        <Link href="/faq" className="underline hover:text-ink">
+          FAQ
+        </Link>
+        , or{" "}
+        <Link href="/contact" className="underline hover:text-ink">
+          contact our team
+        </Link>{" "}
+        with your order number.
+      </p>
     </div>
   );
 }

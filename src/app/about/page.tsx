@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "HEMPAC Sport was founded to make premium fitness equipment accessible across Zimbabwe. Meet the team and story behind the brand.",
+  alternates: { canonical: "/about" },
 };
 
 const VALUES = [

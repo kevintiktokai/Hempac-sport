@@ -133,8 +133,9 @@ export default function Header() {
               )}
             </Link>
             <Link
-              href="/checkout"
-              aria-label="Account"
+              href="/membership"
+              aria-label="HEMPAC Rewards membership"
+              title="HEMPAC Rewards"
               className="hidden h-10 w-10 items-center justify-center rounded-full hover:bg-mist sm:flex"
             >
               <UserIcon />
@@ -243,6 +244,9 @@ export default function Header() {
               </Link>
               <Link href="/contact" className="text-lg font-medium" onClick={() => setMenuOpen(false)}>
                 Contact
+              </Link>
+              <Link href="/faq" className="text-lg font-medium" onClick={() => setMenuOpen(false)}>
+                FAQ
               </Link>
               <div className="my-1 h-px bg-line" />
               <Link href="/wishlist" className="text-lg font-medium" onClick={() => setMenuOpen(false)}>

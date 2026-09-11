@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Find My Gear",
   description:
     "Answer three quick questions and we'll match you with the perfect HEMPAC equipment.",
+  alternates: { canonical: "/quiz" },
 };
 
 export default function QuizPage() {
