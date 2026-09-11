@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { img, PHOTOS } from "@/lib/images";
 import { CATEGORIES } from "@/lib/products";
+import { BLOG_POSTS, formatPostDate } from "@/lib/blog";
 import { PillLink } from "@/components/Pill";
 import Reveal from "@/components/Reveal";
 import { BoltIcon, ShieldIcon, TargetIcon } from "@/components/icons";
@@ -227,6 +228,57 @@ export default function HomePage() {
 
       {/* ————— Testimonials ————— */}
       <Testimonials />
+
+      {/* ————— From the journal ————— */}
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
+        <Reveal>
+          <div className="flex flex-wrap items-end justify-between gap-6">
+            <div>
+              <p className="text-sm font-medium uppercase tracking-widest text-ink/40">
+                The HEMPAC Journal
+              </p>
+              <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-display sm:text-5xl">
+                Buying guides &amp; <span className="text-flame">training tips.</span>
+              </h2>
+            </div>
+            <PillLink href="/blog" variant="outline">
+              Read the Journal
+            </PillLink>
+          </div>
+        </Reveal>
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {BLOG_POSTS.slice(0, 3).map((post, i) => (
+            <Reveal key={post.slug} delay={i * 90}>
+              <Link href={`/blog/${post.slug}`} className="group flex h-full flex-col">
+                <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-mist">
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="mt-5 flex items-center gap-3 text-xs">
+                  <span className="font-semibold uppercase tracking-wide text-ember">
+                    {post.category}
+                  </span>
+                  <span className="text-ink/40">{post.readTime}</span>
+                </div>
+                <h3 className="mt-3 text-lg font-semibold leading-snug group-hover:underline">
+                  {post.title}
+                </h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-ink/60">
+                  {post.excerpt}
+                </p>
+                <p className="mt-4 text-xs text-ink/50">
+                  {post.author} · {formatPostDate(post.date)}
+                </p>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </section>
 
       {/* ————— CTA ————— */}
       <section className="relative overflow-hidden bg-ink">

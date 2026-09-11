@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import PageHeader from "@/components/PageHeader";
-import { PillButton } from "@/components/Pill";
+import { PillButton, PillLink } from "@/components/Pill";
 import { CheckIcon } from "@/components/icons";
+import { FAQ_GROUPS } from "@/lib/faq";
 
 const WHATSAPP = "263784712881";
 
@@ -34,34 +35,48 @@ const CONTACT_METHODS = [
   },
 ];
 
+// A taster of the full FAQ — the rest lives on /faq.
 const FAQS = [
-  {
-    q: "Can I test equipment before buying?",
-    a: "Yes — we encourage customers to visit our Harare showroom to test equipment. Our experts will guide you through the options and help you find the perfect fit for your needs and space.",
-  },
-  {
-    q: "What payment methods do you accept?",
-    a: "You can pay online by card at checkout, or choose cash on delivery. For larger orders we also offer flexible payment plans with 0% interest for qualified customers on purchases over $1,000.",
-  },
-  {
-    q: "Do you deliver and install?",
-    a: "We provide free delivery within Harare on orders over $500, with nationwide delivery available. Our team also offers professional installation for $50–150 depending on equipment complexity, including usage training.",
-  },
+  FAQ_GROUPS[2].items[0],
+  FAQ_GROUPS[0].items[0],
+  FAQ_GROUPS[1].items[2],
 ];
 
 export default function ContactClient() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
-  const [sent, setSent] = useState(false);
+  const [sent, setSent] = useState<{ reference: string } | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [submitting, setSubmitting] = useState(false);
+  const [serverError, setServerError] = useState("");
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setServerError("");
     const next: Record<string, string> = {};
     if (!form.name.trim()) next.name = "Please enter your name";
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) next.email = "Enter a valid email";
     if (!form.message.trim()) next.message = "Please enter a message";
     setErrors(next);
-    if (Object.keys(next).length === 0) setSent(true);
+    if (Object.keys(next).length > 0) return;
+
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setServerError(data.error ?? "Something went wrong. Please try again.");
+        return;
+      }
+      setSent({ reference: data.reference });
+    } catch {
+      setServerError("Network error — please try again, or message us on WhatsApp.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const inputClass = (error?: string) =>
@@ -124,6 +139,9 @@ export default function ContactClient() {
                   Thanks {form.name.split(" ")[0]} — we&apos;ll be in touch within one
                   business day. For anything urgent, message us on WhatsApp.
                 </p>
+                <p className="mt-4 text-xs uppercase tracking-wider text-ink/40">
+                  Reference {sent.reference}
+                </p>
               </div>
             ) : (
               <form onSubmit={submit} noValidate className="space-y-4">
@@ -179,8 +197,17 @@ export default function ContactClient() {
                   />
                   {errors.message && <span className="mt-1 block text-xs text-red-500">{errors.message}</span>}
                 </label>
-                <PillButton type="submit" className="w-full justify-center">
-                  Send Message
+                {serverError && (
+                  <p className="rounded-2xl bg-ember/10 px-4 py-3 text-sm text-ember" role="alert">
+                    {serverError}
+                  </p>
+                )}
+                <PillButton
+                  type="submit"
+                  disabled={submitting}
+                  className="w-full justify-center"
+                >
+                  {submitting ? "Sending…" : "Send Message"}
                 </PillButton>
               </form>
             )}
@@ -199,6 +226,11 @@ export default function ContactClient() {
                 <p className="mt-2 text-sm leading-relaxed text-ink/60">{f.a}</p>
               </div>
             ))}
+          </div>
+          <div className="mt-8">
+            <PillLink href="/faq" variant="outline">
+              See all questions
+            </PillLink>
           </div>
         </div>
       </section>
